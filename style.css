@@ -48,7 +48,9 @@
     border: 1px solid gray;
     background-color: white;
 }
+/* Fine header */
 
+/* Main */
 main {
     display: flex;
     justify-content: center;
@@ -60,20 +62,58 @@ main {
 main .container-grid {
     display: flex;
     flex-wrap: wrap;
-    width: 35%;
-    height: calc(40% + 11% + 7%);
     border: 1px solid black;
 }
 
-.box {
+/* Applico una grandezza griglia per ogni difficoltà */
+.easy {
+    width: 35%;
+    height: calc(40% + 11% + 7%);
+}
+
+.normal {
+    width: 30%;
+    height: calc(30% + 11% + 7%);
+}
+
+.hard {
+    width: 25%;
+    height: calc(25% + 11% + 7%);
+}
+/* Applico una grandezza griglia per ogni difficoltà */
+
+
+/* Applico una grandezza box per ogni difficoltà */
+.box-easy {
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 1px solid black;
 }
 
+.box-normal {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 1px solid black;
+}
 
+.box-hard {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    border: 1px black solid;
+}
+/* Fine applico una grandezza box per ogni difficoltà */
+/* Fine main */
+
+
+/* Footer */
 footer {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 7%;
     background-color: white;
+}
+
+footer span {
+    margin-left: 10%;
 }
