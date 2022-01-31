@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+/* Utili */
+.hidden {
+    display: none;
+}
+/* Fine utili */
+
 .container {
     width: 100%;
     height: 100vh;
@@ -62,44 +68,39 @@ main {
 main .container-grid {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
+    width: 50%;
+    height: calc(50% + 11% + 7%);
 }
-
-/* Applico una grandezza griglia per ogni difficoltà */
-.easy {
-    width: 35%;
-    height: calc(40% + 11% + 7%);
-}
-
-.normal {
-    width: 30%;
-    height: calc(30% + 11% + 7%);
-}
-
-.hard {
-    width: 25%;
-    height: calc(25% + 11% + 7%);
-}
-/* Applico una grandezza griglia per ogni difficoltà */
-
 
 /* Applico una grandezza box per ogni difficoltà */
 .box-easy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 1px solid black;
-}
-
-.box-normal {
-    width: calc(100% / 9);
-    height: calc(100% / 9);
-    border: 1px solid black;
+    cursor: default;
 }
 
 .box-hard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 1px solid black;
+    cursor: default;
+}
+
+.box-crazy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: calc(100% / 7);
     height: calc(100% / 7);
     border: 1px black solid;
+    cursor: default;
 }
 /* Fine applico una grandezza box per ogni difficoltà */
 /* Fine main */
@@ -116,4 +117,10 @@ footer {
 
 footer span {
     margin-left: 10%;
+}
+/* Fine footer */
+
+.click {
+    background-color: rgb(100, 149, 237);
+    color: white;
 }
