@@ -68,7 +68,7 @@ main {
 main .container-grid {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: calc(50% - 11% - 7%);
     height: calc(50% + 11% + 7%);
 }
 
